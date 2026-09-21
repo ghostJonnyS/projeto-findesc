@@ -9,6 +9,8 @@ let receita = 0;
 let despesa = 0;
 
 
+function menu() {
+
 console.log("================================");
 console.log("          findesc");
 console.log("================================");
@@ -16,8 +18,6 @@ console.log("\n1 - Adicionar receita");
 console.log("2 - Adicionar despesa");
 console.log("3 - Ver saldo");
 console.log("4 - Sair");
-
-function menu() {
 
 rl.question("\nEscolha uma opção: ", (opcao) => {
 
@@ -50,7 +50,7 @@ rl.question("\nEscolha uma opção: ", (opcao) => {
 
     } else {
         console.log("Essa opção está errada -_-.");
-        rl.close();
+        menu();
     }
 });
 
